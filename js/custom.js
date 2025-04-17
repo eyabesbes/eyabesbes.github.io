@@ -19,6 +19,10 @@
 	    nav:true
 	});
 
+
+
+
+  
     // SMOOTHSCROLL
     $(function() {
       $('.nav-link, .custom-btn-link').on('click', function(event) {
@@ -34,3 +38,5 @@
     $('.social-links a').tooltip();
 
 })(jQuery);
+
+

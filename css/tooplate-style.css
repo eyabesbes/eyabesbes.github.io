@@ -572,15 +572,13 @@ h2.animated-text {
   }
 }
 
-/* 
- I added this section */
 .mr-2 {
-  display: inline-block; /* transform ne fonctionne pas toujours bien sur les éléments 'inline' par défaut */
+  display: inline-block; 
   transform: translateY(-1.5rem); 
-   /* Décale vers le haut par rapport à la ligne de base. Ajustez la valeur */
-                       /* Vous pouvez aussi utiliser des valeurs comme 'super', 'text-top', ou des pourcentages/em */
-                       /* Une valeur positive déplace généralement vers le haut (selon la référence) */
-}
+
+
+  
+} 
 
 h2.intro-subtitle {
   margin-bottom: 1px; /* Ajustez : 0, 5px, 10px etc. */
@@ -597,14 +595,14 @@ h2.intro-subtitle {
  * and proper presentation of the "About" content.
  */
 
-.heading {margin-top: 280px;
+.heading {margin-top: 300px;
   text-align: center;
 }
 
 .about .row {
   display: flex;
   flex-direction: row;
-  gap: -10px;
+  gap: -200px;
   flex-wrap: wrap;
   padding: 10rem;
   align-items: flex-start; /* Align items to the top of the container */
@@ -622,14 +620,10 @@ h2.intro-subtitle {
 
 .about  img {
   display: block;  /* Important for margin collapsing */
-  width: 25rem;
-  height: 40em; /* Maintains aspect ratio */
-  border-radius: 5%;
-  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.6); 
-  mix-blend-mode: luminosity; 
-  transition: 0.3s;
-  cursor: pointer;
-
+  width: 34rem;
+  height: 34rem; /* Maintains aspect ratio */
+  object-fit: cover;
+  border-radius: 400%; 
   margin-top: -50px;
   left: 70px; /* Adjust the value as needed */
 }
@@ -637,7 +631,7 @@ h2.intro-subtitle {
 .about .content {
   flex: 1 1 100px;
   padding: 10rem;
-  margin-top: -8rem;
+  margin-top: -14rem;
   margin-right: -10rem; /* Ajustez la valeur selon vos besoins */
 }
 
