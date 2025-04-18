@@ -8,13 +8,15 @@ https://www.tooplate.com/view/2115-marvel
 
 
 @import url("https://fonts.googleapis.com/css?family=Maven+Pro:400,700");
+
+
 body {
   font-family: "Maven Pro", sans-serif;
   padding-top: 70px;
 }
 
 .full-screen {
-  padding: 8rem 0;
+  padding: 10rem 0;
 }
 
 .small-text {
@@ -111,7 +113,7 @@ b, strong {
   display: inline-block;
   vertical-align: top;
   margin-top: 0px;
-  min-width: 460px;
+  min-width: 106000rem;
   position: relative;
 }
 
@@ -123,6 +125,14 @@ h2.animated-text {
   transform: translateY(-1.5rem);  /* Commencez par 0 */
 }
 
+.home-image {
+  position: absolute;
+  top: 0;
+  right: -10px;
+  left: 0;
+  z-index: -1;
+}
+
 .animated-item {
   font-size: 38px;
   line-height: inherit;
@@ -130,9 +140,9 @@ h2.animated-text {
   opacity: 0;
   overflow: hidden;
   position: absolute;
-  top: 0;
+  top: -50px;
   right: 0;
-  left: 0;
+  left: 150px;
   animation: BottomTotop 6s linear infinite 0s;
 }
 .animated-item:nth-child(2n+2) {
@@ -709,3 +719,4 @@ h2.intro-subtitle {
     gap: 0;
   }
 }
+
